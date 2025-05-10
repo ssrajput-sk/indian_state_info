@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian State Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+        var data=[
+            {"sn":"Select your state","cap":"","gov":"","cm":"","area":"","mapImg":"./Images/","cmImg":"","govImg":""},
+            {"sn":"Bihar","cap":"Patna","gov":"Arif Mohammad Khan","cm":"Nitish Kumar","area":"94,163 sq km","mapImg":"./Images/mapImage/map1.jpeg","cmImg":"./Images/cmImage/cm1.jpeg","govImg":"./Images/govImage/gvr1.jpeg"},
+            {"sn":"Uttar Pradesh","cap":"Lucknow","gov":"Anandiben Patel","cm":"Yogi Adityanath","area":"2,40,928 sq km","mapImg":"./Images/mapImage/map2.jpeg","cmImg":"./Images/cmImage/cm2.jpeg","govImg":"./Images/govImage/gvr2.jpeg"},
+            {"sn":"Maharastra","cap":"Mumbai","gov":"Shri C. P. Radhakrishnan","cm":"Devendra Fadnavis","area":"3,07,713 sq km","mapImg":"./Images/mapImage/map3.jpeg","cmImg":"./Images/cmImage/cm3.jpeg","govImg":"./Images/govImage/gvr3.jpeg"},
+            {"sn":"Goa","cap":"Panaji","gov":"P.S. Sreedharan Pillai","cm":"Pramod Sawant","area":"3,702 sq km","mapImg":"./Images/mapImage/map4.jpeg","cmImg":"./Images/cmImage/cm4.jpeg","govImg":"./Images/govImage/gvr4.jpeg"},
+            {"sn":"Madhya Pradesh","cap":"Bhopal","gov":"Mangubhai C. Pateli","cm":"Mohan Yadav","area":"3,08,245 sq km","mapImg":"./Images/mapImage/map5.jpeg","cmImg":"./Images/cmImage/cm5.jpeg","govImg":"./Images/govImage/gvr5.jpeg"},
+            {"sn":"Andhra Pradesh","cap":"Amaravati","gov":"S. Abdul Nazer","cm":"Sri Nara Chandrababu Naidu","area":"1,62,970 sq km","mapImg":"./Images/mapImage/map6.jpeg","cmImg":"./Images/cmImage/cm6.jpeg","govImg":"./Images/govImage/gvr6.jpeg"},
+            {"sn":"Arunachal Pradesh","cap":"Itanagar","gov":"Kaiwalya Trivikram Parnaik","cm":"Pema Khandu","area":"83,743 sq km","mapImg":"./Images/mapImage/map7.jpeg","cmImg":"./Images/cmImage/cm7.jpeg","govImg":"./Images/govImage/gvr7.jpeg"},
+            {"sn":"Chhattisgarh","cap":"Raipur","gov":"Ramen Deka","cm":"Himanta Biswa Sarma","area":"78,438 sq km","mapImg":"./Images/mapImage/map8.jpeg","cmImg":"./Images/cmImage/cm8.jpeg","govImg":"./Images/govImage/gvr8.jpeg"},
+            {"sn":"Assam","cap":"Dispur","gov":"Lakshman Prasad Acharya","cm":"Himanta Biswa Sarma","area":"78,438 sq km","mapImg":"./Images/mapImage/map9.jpeg","cmImg":"./Images/cmImage/cm9.jpeg","govImg":"./Images/govImage/gvr9.jpeg"},
+            {"sn":"Gujarat","cap":"Gandhinagar","gov":"Acharya Dev Vrat","cm":"Bhupendra Patel","area":"1,96,024 sq km","mapImg":"./Images/mapImage/map10.jpeg","cmImg":"./Images/cmImage/cm10.jpeg","govImg":"./Images/govImage/gvr10.jpeg"},
+            {"sn":"Haryana","cap":"Chandigarh","gov":"Bandaru Dattatraya","cm":"Nayab Singh Saini","area":"44,212 sq km","mapImg":"./Images/mapImage/map11.jpeg","cmImg":"./Images/cmImage/cm11.jpeg","govImg":"./Images/govImage/gvr11.jpeg"},
+            {"sn":"Himachal Pradesh","cap":"Shimla","gov":"Shiv Pratap Shukla","cm":"Sukhvinder Singh Sukhu","area":"55,673 sq km","mapImg":"./Images/mapImage/map12.jpeg","cmImg":"./Images/cmImage/cm12.jpeg","govImg":"./Images/govImage/gvr12.jpeg"},
+            {"sn":"Jharkhand","cap":"Ranchi","gov":"Santosh Gangwar","cm":"Hemant Soren","area":"79,714 sq km","mapImg":"./Images/mapImage/map13.jpeg","cmImg":"./Images/cmImage/cm13.jpeg","govImg":"./Images/govImage/gvr13.jpeg"},
+            {"sn":"Karnataka","cap":"Bengaluru","gov":"Thaawarchand Gehlot","cm":"Siddaramaiah","area":"1,91,791 sq km","mapImg":"./Images/mapImage/map14.jpeg","cmImg":"./Images/cmImage/cm14.jpeg","govImg":"./Images/govImage/gvr14.jpeg"},
+            {"sn":"Kerala","cap":"Thiruvananthapuram","gov":"Rajendra Vishwanath Arlekar","cm":"Pinarayi Vijayan","area":"38,863 sq km","mapImg":"./Images/mapImage/map15.jpeg","cmImg":"./Images/cmImage/cm15.jpeg","govImg":"./Images/govImage/gvr15.jpeg"},
+            {"sn":"Manipur","cap":"Imphal","gov":"Ajay Kumar Bhalla","cm":"N. Biren Singh","area":"22,327 sq km","mapImg":"./Images/mapImage/map16.jpeg","cmImg":"./Images/cmImage/cm16.jpeg","govImg":"./Images/govImage/gvr16.jpeg"},
+            {"sn":"Meghalaya","cap":"Shillong","gov":"C H Vijayashankar","cm":"Conrad Kongkal Sangma","area":"22,720 sq km","mapImg":"./Images/mapImage/map17.jpeg","cmImg":"./Images/cmImage/cm17.jpeg","govImg":"./Images/govImage/gvr17.jpeg"},
+            {"sn":"Mizoram","cap":"Aizawl","gov":"General (Dr.) Vijay Kumar Singh","cm":"Lalduhoma","area":"21,081 sq km","mapImg":"./Images/mapImage/map18.jpeg","cmImg":"./Images/cmImage/cm18.jpeg","govImg":"./Images/govImage/gvr18.jpeg"},
+            {"sn":"Nagaland","cap":"Kohima","gov":"La. Ganesan","cm":"Neiphiu Rio","area":"16,579 sq km","mapImg":"./Images/mapImage/map19.jpeg","cmImg":"./Images/cmImage/cm19.jpeg","govImg":"./Images/govImage/gvr19.jpeg"},
+            {"sn":"Odisha","cap":"Bhubaneswar","gov":"Dr. Hari Babu Kambhampati","cm":"Mohan Charan Majhi","area":"1,55,707 sq km","mapImg":"./Images/mapImage/map20.jpeg","cmImg":"./Images/cmImage/cm20.jpeg","govImg":"./Images/govImage/gvr20.jpeg"},
+            {"sn":"Punjab","cap":"Chandigarh","gov":"Gulab Chand Kataria","cm":"Bhagwant Singh Mann","area":"50,362 sq km","mapImg":"./Images/mapImage/map21.jpeg","cmImg":"./Images/cmImage/cm21.jpeg","govImg":"./Images/govImage/gvr21.jpeg"},
+            {"sn":"Rajasthan","cap":"Jaipur","gov":"Haribhau Kisanrao Bagde","cm":"Bhajan Lal Sharma","area":"3,42,239 sq km","mapImg":"./Images/mapImage/map22.jpeg","cmImg":"./Images/cmImage/cm22.jpeg","govImg":"./Images/govImage/gvr22.jpeg"},
+            {"sn":"Sikkim","cap":"Gangtok","gov":"Om Prakash Mathur","cm":"PS Golay","area":"7,096 sq km","mapImg":"./Images/mapImage/map23.jpeg","cmImg":"./Images/cmImage/cm23.jpeg","govImg":"./Images/govImage/gvr23.jpeg"},
+            {"sn":"Tamil Nadu","cap":"Chennai","gov":"R. N. Ravi","cm":"M. K. Stalin","area":"1,30,058 sq km","mapImg":"./Images/mapImage/map24.jpeg","cmImg":"./Images/cmImage/cm24.jpeg","govImg":"./Images/govImage/gvr24.jpeg"},
+            {"sn":"Telangana","cap":"Hyderabad","gov":"Jishnu Dev Varma","cm":"Anumula Revanth Reddy","area":"1,14,840 sq km","mapImg":"./Images/mapImage/map25.jpeg","cmImg":"./Images/cmImage/cm25.jpeg","govImg":"./Images/govImage/gvr25.jpeg"},
+            {"sn":"Tripura","cap":"Agartala","gov":"Indra Sena Reddy Nallu","cm":"Dr. Manik Saha","area":"10,491 sq km","mapImg":"./Images/mapImage/map26.jpeg","cmImg":"./Images/cmImage/cm26.jpeg","govImg":"./Images/govImage/gvr26.jpeg"},
+            {"sn":"Uttarakhand","cap":"Dehradun","gov":"Lt. Gen. Gurmit Singh","cm":"Pushkar Singh Dhami","area":"53,483 sq km","mapImg":"./Images/mapImage/map27.jpeg","cmImg":"./Images/cmImage/cm27.jpeg","govImg":"./Images/govImage/gvr27.jpeg"},
+            {"sn":"West Bengal","cap":"Kolkata","gov":"Dr. C.V. Ananda Bose","cm":"Mamata Banerjee","area":"88,752 sq km","mapImg":"./Images/mapImage/map28.jpeg","cmImg":"./Images/cmImage/cm28.jpeg","govImg":"./Images/govImage/gvr28.jpeg"},
+            ];
+        function addStateNames()
+        {
+            let s=document.getElementById("state");
+            for(let i=0;i<data.length;i++)
+            {
+                let opt=document.createElement("option");
+                opt.value=i;
+                opt.innerHTML=data[i].sn;
+                s.appendChild(opt);
+            }
+        }
+        function showStateInfo()
+        {
+            let selectedState=parseInt(document.getElementById("state").value);
+            document.getElementById("sn").innerHTML=data[selectedState].sn;
+            document.getElementById("capital").innerHTML=data[selectedState].cap;
+            document.getElementById("governor").innerHTML=data[selectedState].gov;
+            document.getElementById("cm").innerHTML=data[selectedState].cm;
+            document.getElementById("area").innerHTML=data[selectedState].area;
+            document.getElementById("mapImg").src=data[selectedState].mapImg;
+            document.getElementById("cmImg").src=data[selectedState].cmImg;
+            document.getElementById("govImg").src=data[selectedState].govImg;
+            document.getElementById("msg").innerHTML="Disclaimer: This information is corrected up to this date."
+        }
+    </script>
+</head>
+<body onload="addStateNames();">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+                <h1>Indian State Information</h1>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-4">
+                <select id="state" onchange="showStateInfo();">
+
+                </select>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <br/>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <label>State Name</label><br/>
+                <label id="sn"></label>
+            </div>
+            <div class="col-sm-2">
+                <label>Capital</label><br/>
+                <label id="capital"></label>
+            </div>
+            <div class="col-sm-2">
+                <label>Governor</label><br/>
+                <label id="governor"></label>
+                <img id="govImg" style="max-width: 100px;"/>
+            </div>
+            <div class="col-sm-2">
+                <label>Chief Minister</label><br/>
+                <label id="cm"></label><br/>
+                <img id="cmImg" style="max-width: 100px;"/>
+            </div>
+            <div class="col-sm-2">
+                <label>Area</label><br/>
+                <label id="area"></label>
+            </div>
+            <div class="col-sm-2">
+                <label>Map</label><br/>
+                <img id="mapImg" style="max-width: 100px;"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6" id="msg"></div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+</body>
+</html>
